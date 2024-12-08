@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/higherButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="@color/black"
+        android:text="HIGHER"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/lowerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/streakCountTextView" />
+
+    <Button
+        android:id="@+id/lowerButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/black"
+        android:text="LOWER"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/higherButton"
+        app:layout_constraintTop_toBottomOf="@+id/streakCountTextView" />
+
+    <TextView
+        android:id="@+id/streakCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        android:text="@string/streakTextView"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldCardImageView" />
+
+    <ImageView
+        android:id="@+id/oldCardImageView"
+        android:layout_width="158dp"
+        android:layout_height="231dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/backCardImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clubsace" />
+
+    <ImageView
+        android:id="@+id/lastCardImageView"
+        android:layout_width="151dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="@+id/oldCardImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clubsace" />
+
+    <ImageView
+        android:id="@+id/backCardImageView"
+        android:layout_width="173dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oldCardImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cardback" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

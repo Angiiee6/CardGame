@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HigherLowerCardGame</string>
+    <string name="rules">RULES</string>
+    <string name="start">START</string>
+    <string name="logo">logo</string>
+    <string name="streakTextView">Streak: </string>
+    <string name="rulestext">The rules are simple, a card will appear and you will guess if the next card will be higher or lower. You will also have a streak count if you guess correct! \n (Aces are highest value) \n Good Luck!</string>
+    <string name="backbuttonfromrules">Im ready to play!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
